@@ -6,7 +6,7 @@ class EncryptTest {
 
     @Test
     void encryption () {
-        assertEquals(Encrypt.encrypt("HI",2),"JK");
+        assertEquals(Encrypt.encrypt("HI",2).toString(),"JK");
     }
 
 }
