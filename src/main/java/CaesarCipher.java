@@ -6,8 +6,9 @@ public class CaesarCipher {
         int s = 2;
         System.out.println("Original String  : " + text);
         System.out.println("Key : " + s);
-        System.out.println("Encoded: " + Encrypt.encrypt(text, s));
-        System.out.println("Decoded: " + Encrypt.encrypt(text, s));
+        String encoded=Encrypt.encrypt(text, s).toString();
+        System.out.println("Encoded: " + encoded);
+        System.out.println("Decoded: " + Decrypt.decrypt(encoded, s));
 
     }
 }
