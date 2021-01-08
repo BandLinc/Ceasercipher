@@ -9,6 +9,5 @@ public class CaesarCipher {
         String encoded=Encrypt.encrypt(text, s).toString();
         System.out.println("Encoded: " + encoded);
         System.out.println("Decoded: " + Decrypt.decrypt(encoded, s));
-
     }
 }
