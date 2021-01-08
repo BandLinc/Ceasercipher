@@ -10,10 +10,10 @@ class EncryptTest {
         assertEquals(Encrypt.encrypt("HI",2).toString(),"JK");
     }
 
-    //Checking that value submitted as key is between 1 and 25
+  //Checking for the key above 25
     @Test
-    void checkKey () {
-
+    void checkKeyLengthAbove25 () {
+        assertEquals(Encrypt.encrypt("HI",26).toString(),"Key length should be between 1 and 25");
     }
 
 }
